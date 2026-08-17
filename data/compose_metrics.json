@@ -1,0 +1,9 @@
+{
+  "columns": ["Method", "Params", "Edit Success \u2191", "Identity Preserv. \u2191", "Overall \u2191"],
+  "highlightBest": true,
+  "rows": [
+    { "cells": ["Sequential (Method C)", "8B", 0.512, 0.803, 0.61] },
+    { "cells": ["Joint (Method B)", "5B", 0.548, 0.821, 0.66] },
+    { "cells": ["Ours", "5B", 0.731, 0.902, 0.81], "ours": true }
+  ]
+}

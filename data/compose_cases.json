@@ -1,0 +1,376 @@
+[
+  {
+    "id": "compose_84",
+    "type": [
+      "2-Atomic",
+      "Stylize",
+      "Replace"
+    ],
+    "instruction": [
+      "Restyle The green SUV parked to the left and behind the man into watercolor painting.",
+      "Replace The blue denim shirt with white geometric patterns worn by the man with a bright red plaid flannel shirt."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/composite/84_src.mp4"
+      },
+      {
+        "label": "CoinVE-Edit (Ours)",
+        "video": "assets/videos/composite/84_step6000_tgt.mp4",
+        "highlight": true
+      },
+      {
+        "label": "Seedance 2.0",
+        "video": "assets/videos/composite/84_seedance_2_tgt.mp4"
+      },
+      {
+        "label": "Kling O3",
+        "video": "assets/videos/composite/84_kling_o3_tgt.mp4"
+      },
+      {
+        "label": "SAMA",
+        "video": "assets/videos/composite/84_sama_tgt.mp4"
+      }
+    ]
+  },
+  {
+    "id": "compose_87",
+    "type": [
+      "2-Atomic",
+      "Stylize",
+      "Replace"
+    ],
+    "instruction": [
+      "Restyle The bright rectangular window opening on the far right side into watercolor painting.",
+      "Replace The main red chicken head and neck in the center foreground with a black and white rooster head with a prominent comb."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/composite/87_src.mp4"
+      },
+      {
+        "label": "CoinVE-Edit (Ours)",
+        "video": "assets/videos/composite/87_step6000_tgt.mp4",
+        "highlight": true
+      },
+      {
+        "label": "Seedance 2.0",
+        "video": "assets/videos/composite/87_seedance_2_tgt.mp4"
+      },
+      {
+        "label": "Kling O3",
+        "video": "assets/videos/composite/87_kling_o3_tgt.mp4"
+      },
+      {
+        "label": "SAMA",
+        "video": "assets/videos/composite/87_sama_tgt.mp4"
+      }
+    ]
+  },
+  {
+    "id": "compose_173",
+    "type": [
+      "3-Atomic",
+      "Stylize",
+      "Replace",
+      "Remove"
+    ],
+    "instruction": [
+      "Restyle The woman (Brandi) standing in the center of the frame into cel-shaded anime.",
+      "Replace The yellow beehive-shaped ceramic jar on the counter to the right with a large red teapot.",
+      "Remove The chalkboard sign reading 'WELCOME TO BRANDI'S KITCHEN' on the upper left wall."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/composite/173_src.mp4"
+      },
+      {
+        "label": "CoinVE-Edit (Ours)",
+        "video": "assets/videos/composite/173_step6000_tgt.mp4",
+        "highlight": true
+      },
+      {
+        "label": "Seedance 2.0",
+        "video": "assets/videos/composite/173_seedance_2_tgt.mp4"
+      },
+      {
+        "label": "Kling O3",
+        "video": "assets/videos/composite/173_kling_o3_tgt.mp4"
+      },
+      {
+        "label": "SAMA",
+        "video": "assets/videos/composite/173_sama_tgt.mp4"
+      }
+    ]
+  },
+  {
+    "id": "compose_170",
+    "type": [
+      "3-Atomic",
+      "Stylize",
+      "Add",
+      "Replace"
+    ],
+    "instruction": [
+      "Restyle the large screen or wall featuring a cityscape image behind the subjects into pop art.",
+      "Add a tall potted plant with green leaves near the main presenter standing in the center foreground.",
+      "Replace the dark blue suit jacket worn by the man with a red leather jacket."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/composite/170_src.mp4"
+      },
+      {
+        "label": "CoinVE-Edit (Ours)",
+        "video": "assets/videos/composite/170_step6000_tgt.mp4",
+        "highlight": true
+      },
+      {
+        "label": "Seedance 2.0",
+        "video": "assets/videos/composite/170_seedance_2_tgt.mp4"
+      },
+      {
+        "label": "Kling O3",
+        "video": "assets/videos/composite/170_kling_o3_tgt.mp4"
+      },
+      {
+        "label": "SAMA",
+        "video": "assets/videos/composite/170_sama_tgt.mp4"
+      }
+    ]
+  },
+  {
+    "id": "compose_253",
+    "type": [
+      "3-Atomic",
+      "Add",
+      "Remove",
+      "Replace"
+    ],
+    "instruction": [
+      "Add a pair of glowing red optical sensors to the faceplate of the metallic humanoid robot.",
+      "Remove the large silhouetted tree branches visible on the left side of the scene.",
+      "Replace the bright white window background behind the robot with a dark starry space view featuring distant nebulae."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/composite/253_src.mp4"
+      },
+      {
+        "label": "CoinVE-Edit (Ours)",
+        "video": "assets/videos/composite/253_step6000_tgt.mp4",
+        "highlight": true
+      },
+      {
+        "label": "Seedance 2.0",
+        "video": "assets/videos/composite/253_seedance_2_tgt.mp4"
+      },
+      {
+        "label": "Kling O3",
+        "video": "assets/videos/composite/253_kling_o3_tgt.mp4"
+      },
+      {
+        "label": "SAMA",
+        "video": "assets/videos/composite/253_sama_tgt.mp4"
+      }
+    ]
+  },
+  {
+    "id": "compose_272",
+    "type": [
+      "4-Atomic",
+      "Replace",
+      "Add",
+      "Remove"
+    ],
+    "instruction": [
+      "Replace the yellow shirt worn by the person in the background with a red t-shirt.",
+      "Add a small bunch of fresh mint leaves on the wooden cutting board surface to the left of the green bowl.",
+      "Remove the whole mango sitting on the right side of the counter.",
+      "Replace the stainless steel oven and kitchen cabinetry in the background with a white tiled wall with a window showing daylight."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/composite/272_src.mp4"
+      },
+      {
+        "label": "CoinVE-Edit (Ours)",
+        "video": "assets/videos/composite/272_step6000_tgt.mp4",
+        "highlight": true
+      },
+      {
+        "label": "Seedance 2.0",
+        "video": "assets/videos/composite/272_seedance_2_tgt.mp4"
+      },
+      {
+        "label": "Kling O3",
+        "video": "assets/videos/composite/272_kling_o3_tgt.mp4"
+      },
+      {
+        "label": "SAMA",
+        "video": "assets/videos/composite/272_sama_tgt.mp4"
+      }
+    ]
+  },
+  {
+    "id": "compose_325",
+    "type": [
+      "4-Atomic",
+      "Add",
+      "Remove",
+      "Replace"
+    ],
+    "instruction": [
+      "Add a large, round hay bale on the flatbed cargo area of the vintage truck.",
+      "Remove the rustic wooden house with the rusted metal roof in the right background.",
+      "Replace the clear blue sky above the scene with a dramatic sunset sky filled with orange and purple clouds.",
+      "Replace the rusted greenish-blue paint texture of the main truck body with shiny metallic silver paint."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/composite/325_src.mp4"
+      },
+      {
+        "label": "CoinVE-Edit (Ours)",
+        "video": "assets/videos/composite/325_step6000_tgt.mp4",
+        "highlight": true
+      },
+      {
+        "label": "Seedance 2.0",
+        "video": "assets/videos/composite/325_seedance_2_tgt.mp4"
+      },
+      {
+        "label": "Kling O3",
+        "video": "assets/videos/composite/325_kling_o3_tgt.mp4"
+      },
+      {
+        "label": "SAMA",
+        "video": "assets/videos/composite/325_sama_tgt.mp4"
+      }
+    ]
+  },
+  {
+    "id": "compose_311",
+    "type": [
+      "4-Atomic",
+      "Replace",
+      "Add",
+      "Remove"
+    ],
+    "instruction": [
+      "Replace the man's gray sweatshirt with a red varsity jacket.",
+      "Add a large silver chef's knife at the wooden countertop to the right of the blender.",
+      "Replace the white brick wall with a dark blue painted wall.",
+      "Remove the man's beard."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/composite/311_src.mp4"
+      },
+      {
+        "label": "CoinVE-Edit (Ours)",
+        "video": "assets/videos/composite/311_step6000_tgt.mp4",
+        "highlight": true
+      },
+      {
+        "label": "Seedance 2.0",
+        "video": "assets/videos/composite/311_seedance_2_tgt.mp4"
+      },
+      {
+        "label": "Kling O3",
+        "video": "assets/videos/composite/311_kling_o3_tgt.mp4"
+      },
+      {
+        "label": "SAMA",
+        "video": "assets/videos/composite/311_sama_tgt.mp4"
+      }
+    ]
+  },
+  {
+    "id": "compose_355",
+    "type": [
+      "5-Atomic",
+      "Replace",
+      "Remove",
+      "Add"
+    ],
+    "instruction": [
+      "Replace the white v-neck t-shirt worn by the man with a black leather jacket.",
+      "Remove the silver toaster oven on the right wooden shelf.",
+      "Replace the corrugated metal wall behind the man with a plain white brick wall.",
+      "Add black sunglasses to the man's face.",
+      "Add a large stainless steel mixing bowl to the empty space on the wooden counter in front of the man."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/composite/355_src.mp4"
+      },
+      {
+        "label": "CoinVE-Edit (Ours)",
+        "video": "assets/videos/composite/355_step6000_tgt.mp4",
+        "highlight": true
+      },
+      {
+        "label": "Seedance 2.0",
+        "video": "assets/videos/composite/355_seedance_2_tgt.mp4"
+      },
+      {
+        "label": "Kling O3",
+        "video": "assets/videos/composite/355_kling_o3_tgt.mp4"
+      },
+      {
+        "label": "SAMA",
+        "video": "assets/videos/composite/355_sama_tgt.mp4"
+      }
+    ]
+  },
+  {
+    "id": "compose_332",
+    "type": [
+      "5-Atomic",
+      "Stylize",
+      "Remove",
+      "Replace",
+      "Add"
+    ],
+    "instruction": [
+      "Restyle The white wall behind the main subject into watercolor painting.",
+      "Remove The windows with blinds visible in the far right background.",
+      "Replace The blue dress worn by the main woman with a red floral patterned blouse.",
+      "Add a pair of large round sunglasses at The glasses worn by the main woman.",
+      "Remove The doorway or opening on the left side background."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/composite/332_src.mp4"
+      },
+      {
+        "label": "CoinVE-Edit (Ours)",
+        "video": "assets/videos/composite/332_step6000_tgt.mp4",
+        "highlight": true
+      },
+      {
+        "label": "Seedance 2.0",
+        "video": "assets/videos/composite/332_seedance_2_tgt.mp4"
+      },
+      {
+        "label": "Kling O3",
+        "video": "assets/videos/composite/332_kling_o3_tgt.mp4"
+      },
+      {
+        "label": "SAMA",
+        "video": "assets/videos/composite/332_sama_tgt.mp4"
+      }
+    ]
+  }
+]

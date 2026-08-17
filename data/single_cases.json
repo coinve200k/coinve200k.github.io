@@ -1,0 +1,170 @@
+[
+  {
+    "id": "single_0084",
+    "type": "Local Change",
+    "instruction": "Replace the stone bench with a rustic wooden bench made of weathered planks, ensuring it maintains the same position and pose within the video scene.",
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/single/single_0084_input.mp4"
+      },
+      {
+        "label": "CoinVE-Edit (Ours)",
+        "video": "assets/videos/single/single_0084_ours.mp4",
+        "highlight": true
+      },
+      {
+        "label": "VINO",
+        "video": "assets/videos/single/single_0084_vino.mp4"
+      },
+      {
+        "label": "Kiwi-Edit",
+        "video": "assets/videos/single/single_0084_kiwi_edit.mp4"
+      },
+      {
+        "label": "SAMA",
+        "video": "assets/videos/single/single_0084_sama.mp4"
+      }
+    ]
+  },
+  {
+    "id": "single_0312",
+    "type": "Local Change",
+    "instruction": "Given the video of the man holding a traditional wooden shotgun in the dry field, transform the shotgun instantly into a polished wooden acoustic guitar, with strings and tuning pegs, while keeping the man's pose and environment unchanged.",
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/single/single_0312_input.mp4"
+      },
+      {
+        "label": "CoinVE-Edit (Ours)",
+        "video": "assets/videos/single/single_0312_ours.mp4",
+        "highlight": true
+      },
+      {
+        "label": "VINO",
+        "video": "assets/videos/single/single_0312_vino.mp4"
+      },
+      {
+        "label": "Kiwi-Edit",
+        "video": "assets/videos/single/single_0312_kiwi_edit.mp4"
+      },
+      {
+        "label": "SAMA",
+        "video": "assets/videos/single/single_0312_sama.mp4"
+      }
+    ]
+  },
+  {
+    "id": "single_0149",
+    "type": "Background Replace",
+    "instruction": "Replace the background with a dynamic cozy lounge scene where the fireplace flickers with dancing flames, shadows gently move on the walls, and a soft glow illuminates the room. The subject remains perfectly still.",
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/single/single_0149_input.mp4"
+      },
+      {
+        "label": "CoinVE-Edit (Ours)",
+        "video": "assets/videos/single/single_0149_ours.mp4",
+        "highlight": true
+      },
+      {
+        "label": "VINO",
+        "video": "assets/videos/single/single_0149_vino.mp4"
+      },
+      {
+        "label": "Kiwi-Edit",
+        "video": "assets/videos/single/single_0149_kiwi_edit.mp4"
+      },
+      {
+        "label": "SAMA",
+        "video": "assets/videos/single/single_0149_sama.mp4"
+      }
+    ]
+  },
+  {
+    "id": "single_0219",
+    "type": "Local Remove",
+    "instruction": "Completely remove a light blue cowboy hat with a wide, slightly curved brim and a smooth, rounded crown from the entire video, using temporally consistent background inpainting and ensuring all other video content remains unchanged.",
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/single/single_0219_input.mp4"
+      },
+      {
+        "label": "CoinVE-Edit (Ours)",
+        "video": "assets/videos/single/single_0219_ours.mp4",
+        "highlight": true
+      },
+      {
+        "label": "VINO",
+        "video": "assets/videos/single/single_0219_vino.mp4"
+      },
+      {
+        "label": "Kiwi-Edit",
+        "video": "assets/videos/single/single_0219_kiwi_edit.mp4"
+      },
+      {
+        "label": "SAMA",
+        "video": "assets/videos/single/single_0219_sama.mp4"
+      }
+    ]
+  },
+  {
+    "id": "single_0226",
+    "type": "Local Remove",
+    "instruction": "Remove the sleek, dark gray car with compact, aerodynamic design from the entire video sequence. The background must be reconstructed with temporal consistency, and all other video content must remain unchanged.",
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/single/single_0226_input.mp4"
+      },
+      {
+        "label": "CoinVE-Edit (Ours)",
+        "video": "assets/videos/single/single_0226_ours.mp4",
+        "highlight": true
+      },
+      {
+        "label": "VINO",
+        "video": "assets/videos/single/single_0226_vino.mp4"
+      },
+      {
+        "label": "Kiwi-Edit",
+        "video": "assets/videos/single/single_0226_kiwi_edit.mp4"
+      },
+      {
+        "label": "SAMA",
+        "video": "assets/videos/single/single_0226_sama.mp4"
+      }
+    ]
+  },
+  {
+    "id": "single_0247",
+    "type": "Local Add",
+    "instruction": "Overlay an animated pair of sunglasses on the man's shirt collar near the top button. The sunglasses must be perfectly tracked to the shirt as the camera moves. Their reflections and shadows should dynamically adapt to the changing light. All other parts of the video must remain unchanged.",
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/single/single_0247_input.mp4"
+      },
+      {
+        "label": "CoinVE-Edit (Ours)",
+        "video": "assets/videos/single/single_0247_ours.mp4",
+        "highlight": true
+      },
+      {
+        "label": "VINO",
+        "video": "assets/videos/single/single_0247_vino.mp4"
+      },
+      {
+        "label": "Kiwi-Edit",
+        "video": "assets/videos/single/single_0247_kiwi_edit.mp4"
+      },
+      {
+        "label": "SAMA",
+        "video": "assets/videos/single/single_0247_sama.mp4"
+      }
+    ]
+  }
+]

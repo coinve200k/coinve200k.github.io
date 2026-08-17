@@ -1,2 +1,401 @@
-Hello from coinve200k (test)
-Fuchen
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoinVE-200K: A Large-Scale High-Quality Dataset for Compositional Instruction-Guided Video Editing</title>
+  <meta name="description" content="CoinVE-200K: A Large-Scale High-Quality Dataset for Compositional Instruction-Guided Video Editing" />
+  <!-- Fonts & icon libraries (Mage-inspired) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================= -->
+  <!-- HEADER: title / authors / abstract                            -->
+  <!-- ============================================================= -->
+  <header class="hero">
+    <div class="container">
+      <h1 class="title">
+        <img src="assets/images/coinve-logo-alpha.png" class="title-logo" alt="CoinVE-200K" />
+        <span>CoinVE-200K</span>
+      </h1>
+      <p class="subtitle">A Large-Scale High-Quality Dataset for Compositional Instruction-Guided Video Editing</p>
+
+      <div class="authors">
+        <span class="author"><a href="https://scholar.google.com/citations?user=tWdQ7YIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Fuchen Long</a></span>
+        <span class="author">Cong Wang</span>
+        <span class="author">Zitao Gao</span>
+        <span class="author">Wenhao Zhong</span>
+        <span class="author">Yu Cheng</span>
+        <span class="author">Xiaolu Hou</span>
+        <span class="author">Yan Li</span>
+        <span class="author">Xiao Cao</span>
+        <span class="author">Xinlong Sun</span>
+        <span class="author"><a href="https://scholar.google.com/citations?user=qy0QX0MAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener">Xi Chen</a></span>
+        <span class="author">Yu Liu</span>
+      </div>
+      <div class="affiliations">
+        <span>Smart Creation Platform Department, Online Video BU, Tencent</span>
+      </div>
+
+      <!-- LINK BAR: paper / data / model / code  (TODO: fill hrefs) -->
+      <nav class="link-bar">
+        <a class="btn" href="#" target="_blank" rel="noopener">
+          <span class="btn-icon"><i class="ai ai-arxiv"></i></span> Paper
+        </a>
+        <a class="btn" href="https://huggingface.co/datasets/FireCRT/CoinVE-200K" target="_blank" rel="noopener">
+          <span class="btn-icon"><i class="fa-solid fa-database"></i></span> Dataset
+        </a>
+        <a class="btn" href="https://huggingface.co/FireCRT/CoinVE-Edit" target="_blank" rel="noopener">
+          <span class="btn-icon"><i class="fa-solid fa-robot"></i></span> Model
+        </a>
+        <a class="btn" href="https://github.com/coinve200k/CoinVE-200K" target="_blank" rel="noopener">
+          <span class="btn-icon"><i class="fa-brands fa-github"></i></span> Code
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================= -->
+    <!-- ABSTRACT                                                      -->
+    <!-- ============================================================= -->
+    <section class="section" id="abstract">
+      <div class="container narrow">
+        <h2>Abstract</h2>
+        <p class="abstract-text">
+          The quality and diversity of instruction-based video editing datasets are steadily improving, yet existing datasets mainly focus on single editing operations and fall short in supporting compositional instruction-guided video editing. Particularly, multiple editing intents need to be jointly understood and faithfully executed within the same video. To address this issue, we introduce <strong>CoinVE-200K</strong>, a large-scale, high-quality dataset for <strong>Co</strong>mpositional <strong>In</strong>struction-Guided <strong>V</strong>ideo <strong>E</strong>diting. The proposed dataset contains video-editing pairs covering diverse compositional editing scenarios, where each sample involves 2 to 5 atomic editing operations. The editing instructions span multiple target subjects, including humans, objects, and backgrounds, and cover a broad range of edit types such as addition, removal, modification, and stylization. All samples are constructed through a carefully designed data generation and quality filtering pipeline to ensure instruction faithfulness, visual quality, temporal consistency, and compositional diversity. Compared with existing instruction-based video editing datasets, CoinVE-200K places a stronger emphasis on multi-intent composition, region-aware editing, and complex interactions among different editing operations. Besides, to provide a unified evaluation protocol for this challenging setting, we introduce <strong>CoinVE-Bench</strong>, a dedicated benchmark for compositional-instruction video editing, covering diverse combinations of editing subjects, operation types, and instruction complexities. We further present <strong>CoinVE-Edit</strong>, a 22B compositional video editing model built upon Wan2.1-T2V-14B and Qwen3VL-8B. CoinVE-Edit disentangles region-aware attention for different editing instructions, enabling precise multi-region editing while preserving irrelevant content and maintaining temporal coherence. Extensive experiments on CoinVE-Bench demonstrate that CoinVE-Edit achieves strong performance in instruction following, compositional editing accuracy, visual quality, and temporal consistency, providing a powerful baseline for future research on compositional instruction-guided video editing.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- KEY METRICS (Mage-style stat strip)                          -->
+    <!-- ============================================================= -->
+    <section class="section metrics-section" id="highlights">
+      <div class="container">
+        <div class="metric-strip">
+          <div class="metric">
+            <strong>200K+</strong>
+            <span>Video-Instruction Pairs</span>
+          </div>
+          <div class="metric">
+            <strong>1080P</strong>
+            <span>Video Resolution</span>
+          </div>
+          <div class="metric">
+            <strong>201</strong>
+            <span>Max Frame Number</span>
+          </div>
+          <div class="metric">
+            <strong>6</strong>
+            <span>Atomic Editing Types</span>
+          </div>
+        </div>
+        <p class="metric-note">The CoinVE-200K contains video-editing pairs covering diverse compositional editing scenarios, where each sample involves 2 to 5 atomic editing operations. The editing instructions span multiple target subjects, including humans, objects, and backgrounds, and cover a broad range of edit types such as addition, removal, modification, and stylization.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- PART 1: DATASET                                               -->
+    <!-- ============================================================= -->
+    <section class="section" id="dataset">
+      <div class="container">
+        <h2>Part 1 &middot; CoinVE-200K</h2>
+
+        <!-- JSON-driven gallery: edit data/train_cases.json -->
+        <div class="gallery gallery-grid" data-gallery="data/train_cases.json"></div>
+
+        <!-- Statistics charts (static images) -->
+        <h4 class="chart-head">Data Statistics</h4>
+        <div class="chart-grid">
+          <figure class="chart">
+            <figcaption>Frame Number Distribution</figcaption>
+            <img src="assets/images/frame_number_dis.png" alt="Frame Number Distribution" />
+          </figure>
+          <figure class="chart">
+            <figcaption>Atomic Editing Type Distribution</figcaption>
+            <img src="assets/images/atomic_operation_dis.png" alt="Atomic Editing Type Distribution" />
+          </figure>
+          <figure class="chart">
+            <figcaption>Instruction Number per Video Distribution</figcaption>
+            <img src="assets/images/instructions_dis.png" alt="Instruction Number per Video Distribution" />
+          </figure>
+        </div>
+
+        <!-- Additional statistics charts -->
+        <div class="chart-grid">
+          <figure class="chart">
+            <figcaption>Word Cloud of Instructions</figcaption>
+            <img src="assets/images/instruction_wordcloud.png" alt="Word Cloud of Instructions" />
+          </figure>
+          <figure class="chart">
+            <figcaption>Video Editing Quality Score Comparisons</figcaption>
+            <img src="assets/images/quality_scores_style.png" alt="Video Editing Quality Score Comparisons" />
+          </figure>
+          <figure class="chart">
+            <figcaption>Comparisons with Other Video Editing Datasets</figcaption>
+            <img src="assets/images/data_comparisons.png" alt="Comparisons with Other Video Editing Datasets" />
+          </figure>
+        </div>
+
+        <!-- ---- Part 1.2 Benchmark (hidden for now — restore when ready) ----
+        <h3 class="subhead">1.2 &nbsp;Benchmark</h3>
+        <p class="section-lead">
+          TODO: one-line description of the benchmark (videos + instructions + checklists).
+        </p>
+
+        <div class="gallery" data-gallery="data/bench_cases.json"></div>
+
+        <h4 class="chart-head">Statistics</h4>
+        <div class="chart-grid">
+          <figure class="chart">
+            <div class="chart-ph"><span class="placeholder-tag">assets/charts/bench_category.png</span></div>
+            <figcaption>Benchmark category distribution</figcaption>
+          </figure>
+          <figure class="chart">
+            <div class="chart-ph"><span class="placeholder-tag">assets/charts/bench_checklist.png</span></div>
+            <figcaption>Checklist item statistics</figcaption>
+          </figure>
+        </div>
+        ---- end Part 1.2 -->
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- PART 2: RESULTS                                               -->
+    <!-- ============================================================= -->
+    <section class="section alt" id="results">
+      <div class="container">
+        <h2>Part 2 &middot; CoinVE-Edit</h2>
+
+        <!-- ---- Part 2.1 Single-instruction ---- -->
+        <h3 class="subhead">Single-Instruction Video Editing on <strong style="color: var(--accent);">OpenVE-Bench</strong></h3>
+
+        <!-- JSON-driven comparison gallery -->
+        <div class="gallery" data-gallery="data/single_cases.json"></div>
+
+        <!-- Quantitative table (JSON-driven) -->
+        <h4 class="chart-head">Quantitative Comparison</h4>
+        <div class="metrics-table" data-table="data/single_metrics.json"></div>
+
+        <!-- ---- Part 2.2 Compositional-instruction ---- -->
+        <h3 class="subhead">Compositional-Instruction Video Editing on <strong style="color: #7c3aed;">CoinVE-Bench</strong></h3>
+
+        <div class="gallery" data-gallery="data/compose_cases.json"></div>
+
+        <h4 class="chart-head">Quantitative Comparison</h4>
+        <div class="metrics-table">
+  <table class="metrics metrics-grouped">
+    <thead>
+      <tr>
+        <th rowspan="2">Model</th>
+        <th colspan="3" class="group-start">Edit. Acc.</th>
+        <th colspan="3" class="group-start">Phys. Natural.</th>
+        <th class="group-start">Seman. Pres.</th>
+        <th colspan="4" class="group-start">Video Quality</th>
+      </tr>
+      <tr>
+        <th>SA</th>
+        <th>SPA</th>
+        <th>EP</th>
+        <th class="group-start">AN</th>
+        <th>SC</th>
+        <th>MN</th>
+        <th class="group-start">CP</th>
+        <th class="group-start">AQ</th>
+        <th>TQ</th>
+        <th>CQ</th>
+        <th>TS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="method-name">Seedance 2.0</td>
+        <td class="group-start">85.34</td>
+        <td>87.71</td>
+        <td>88.08</td>
+        <td class="group-start best">93.19</td>
+        <td class="best">95.84</td>
+        <td>92.87</td>
+        <td class="group-start best">93.91</td>
+        <td class="group-start">4.47</td>
+        <td>19.55</td>
+        <td class="best">4.41</td>
+        <td>0.62</td>
+      </tr>
+      <tr class="is-baseline">
+        <td class="method-name">Kling O3</td>
+        <td class="group-start">86.91</td>
+        <td>80.93</td>
+        <td>89.06</td>
+        <td class="group-start">92.55</td>
+        <td>90.30</td>
+        <td>93.91</td>
+        <td class="group-start">84.51</td>
+        <td class="group-start best">4.49</td>
+        <td>18.36</td>
+        <td>4.37</td>
+        <td>0.61</td>
+      </tr>
+      <tr>
+        <td class="method-name">VACE</td>
+        <td class="group-start">3.98</td>
+        <td>17.15</td>
+        <td>6.50</td>
+        <td class="group-start">26.69</td>
+        <td>13.82</td>
+        <td>15.21</td>
+        <td class="group-start">87.83</td>
+        <td class="group-start">4.05</td>
+        <td>17.59</td>
+        <td>4.11</td>
+        <td>0.62</td>
+      </tr>
+      <tr>
+        <td class="method-name">Ditto</td>
+        <td class="group-start">34.69</td>
+        <td>36.41</td>
+        <td>40.85</td>
+        <td class="group-start">35.96</td>
+        <td>47.79</td>
+        <td>38.48</td>
+        <td class="group-start">51.98</td>
+        <td class="group-start">3.59</td>
+        <td>17.24</td>
+        <td>3.96</td>
+        <td>0.67</td>
+      </tr>
+      <tr>
+        <td class="method-name">VINO</td>
+        <td class="group-start">83.63</td>
+        <td>66.75</td>
+        <td>89.06</td>
+        <td class="group-start">78.09</td>
+        <td>82.34</td>
+        <td>85.91</td>
+        <td class="group-start">61.70</td>
+        <td class="group-start">4.06</td>
+        <td>17.28</td>
+        <td>4.08</td>
+        <td>0.68</td>
+      </tr>
+      <tr>
+        <td class="method-name">OmniWeaving</td>
+        <td class="group-start">59.67</td>
+        <td>55.94</td>
+        <td>61.11</td>
+        <td class="group-start">54.49</td>
+        <td>66.03</td>
+        <td>65.10</td>
+        <td class="group-start">75.09</td>
+        <td class="group-start">3.79</td>
+        <td>17.95</td>
+        <td>3.84</td>
+        <td>0.62</td>
+      </tr>
+      <tr>
+        <td class="method-name">KiWiEdit</td>
+        <td class="group-start">76.50</td>
+        <td>69.92</td>
+        <td>80.28</td>
+        <td class="group-start">78.37</td>
+        <td>78.50</td>
+        <td>80.76</td>
+        <td class="group-start">70.31</td>
+        <td class="group-start">4.14</td>
+        <td>19.33</td>
+        <td>4.30</td>
+        <td>0.68</td>
+      </tr>
+      <tr>
+        <td class="method-name">SAMA</td>
+        <td class="group-start">75.58</td>
+        <td>73.35</td>
+        <td>79.63</td>
+        <td class="group-start">83.43</td>
+        <td>83.88</td>
+        <td>88.14</td>
+        <td class="group-start">90.08</td>
+        <td class="group-start">3.61</td>
+        <td>18.08</td>
+        <td>4.19</td>
+        <td>0.72</td>
+      </tr>
+      <tr class="is-ours">
+        <td class="method-name">CoinVE-Edit</td>
+        <td class="group-start best">87.97</td>
+        <td class="best">89.45</td>
+        <td class="best">89.60</td>
+        <td class="group-start">91.85</td>
+        <td>91.17</td>
+        <td class="best">95.30</td>
+        <td class="group-start">90.83</td>
+        <td class="group-start">4.13</td>
+        <td class="best">19.57</td>
+        <td>4.31</td>
+        <td class="best">0.72</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- PART 3: METHODOLOGY                                           -->
+    <!-- ============================================================= -->
+    <section class="section" id="method">
+      <div class="container">
+        <h2>Part 3 &middot; Methodology</h2>
+
+        <h3 class="subhead">Data Construction Pipeline of CoinVE-200K</h3>
+        <figure class="wide-figure">
+          <img src="assets/images/data_pipeline.png" alt="Data construction pipeline of CoinVE-200K" />
+          <figcaption>Data construction pipeline of CoinVE-200K.</figcaption>
+        </figure>
+
+        <h3 class="subhead">Architecture of CoinVE-Edit</h3>
+        <figure class="wide-figure">
+          <img src="assets/images/framework.png" alt="Architecture of CoinVE-Edit" />
+          <figcaption>An overview of the proposed CoinVE-Edit framework.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- BIBTEX                                                        -->
+    <!-- ============================================================= -->
+    <section class="section alt" id="citation">
+      <div class="container narrow">
+        <h2>BibTeX</h2>
+        <pre class="bibtex">@article{coinve2026,
+  title   = {CoinVE-200K: A Large-Scale High-Quality Dataset for Compositional Instruction-Guided Video Editing},
+  author  = {Fuchen Long and Cong Wang and Zitao Gao and Wenhao Zhong and Yu Cheng and Xiaolu Hou and Yan Li and Xiao Cao and Xinlong Sun and Xi Chen and Yu Liu},
+  journal = {arXiv preprint arXiv:XXXX.XXXXX},
+  year    = {2026}
+}</pre>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>
+        Website template adapted from
+        <a href="https://github.com/nerfies/nerfies.github.io" target="_blank" rel="noopener">Nerfies</a>.
+        &nbsp;&copy; 2026 PROJECT NAME.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/render.js"></script>
+</body>
+</html>

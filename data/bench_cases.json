@@ -1,0 +1,566 @@
+[
+  {
+    "id": "bench_001",
+    "sample_id": "02103ebbd6833c31",
+    "type": [
+      "2-Atomic",
+      "Stylize",
+      "Replace"
+    ],
+    "instruction": [
+      "Restyle the blurred background area behind the man containing indistinct crowds and figures into a comic book style.",
+      "Replace the black suit jacket worn by the man on his shoulders and chest with a bright red velvet tuxedo jacket."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/bench_001_input.mp4"
+      }
+    ],
+    "checklist": [
+      "The blurred background area behind the man containing indistinct crowds and figures is restyled into comic book style with bold outlines and halftone shading.",
+      "The black suit jacket worn by the man on his shoulders and chest is replaced with a bright red velvet tuxedo jacket.",
+      "Non-target regions and subject identity are preserved.",
+      "Temporal consistency is maintained across frames."
+    ]
+  },
+  {
+    "id": "bench_002",
+    "sample_id": "1052c7c3a2a3667c",
+    "type": [
+      "2-Atomic",
+      "Add",
+      "Replace"
+    ],
+    "instruction": [
+      "Add a large red heart graphic to the chest of the man's black t-shirt.",
+      "Replace the blue wall background with a brick wall with a rustic texture."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/bench_002_input.mp4"
+      }
+    ],
+    "checklist": [
+      "a large red heart graphic printed on the chest is added as specified.",
+      "the blue wall background is replaced with a brick wall with a rustic texture.",
+      "Non-target regions and subject identity are preserved.",
+      "Temporal consistency is maintained across frames."
+    ]
+  },
+  {
+    "id": "bench_003",
+    "sample_id": "114cbf5f744463cd",
+    "type": [
+      "2-Atomic",
+      "Remove",
+      "Replace"
+    ],
+    "instruction": [
+      "Remove the blue pinstripe apron worn by the man.",
+      "Replace the green kitchen cabinets behind the man with a white subway tile wall featuring a hanging copper pan rack."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/bench_003_input.mp4"
+      }
+    ],
+    "checklist": [
+      "the blue pinstripe apron worn by the man in the foreground is fully removed with no residual artifacts.",
+      "the green kitchen cabinets behind the man is replaced with white subway tile wall with a hanging copper pan rack.",
+      "Non-target regions and subject identity are preserved.",
+      "Temporal consistency is maintained across frames."
+    ]
+  },
+  {
+    "id": "bench_004",
+    "sample_id": "09fac3869130c62c",
+    "type": [
+      "2-Atomic",
+      "Replace"
+    ],
+    "instruction": [
+      "Replace the man's purple long-sleeve shirt with a bright red long-sleeve sweater.",
+      "Replace the grey brick wall in the background with a white wooden fence with vertical slats."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/bench_004_input.mp4"
+      }
+    ],
+    "checklist": [
+      "the man's purple long-sleeve shirt is replaced with a bright red long-sleeve sweater.",
+      "the grey brick wall in the background is replaced with a white wooden fence with vertical slats.",
+      "Non-target regions and subject identity are preserved.",
+      "Temporal consistency is maintained across frames."
+    ]
+  },
+  {
+    "id": "bench_005",
+    "sample_id": "030d551c5d2d2f3d",
+    "type": [
+      "2-Atomic",
+      "Stylize",
+      "Remove"
+    ],
+    "instruction": [
+      "Restyle The blue sky with white clouds in the upper background into ghibli style.",
+      "Remove The dorsal fin of the fish."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/bench_005_input.mp4"
+      }
+    ],
+    "checklist": [
+      "The blue sky with white clouds in the upper background is restyled into ghibli.",
+      "The dorsal fin of the fish is fully removed with no residual artifacts.",
+      "Non-target regions and subject identity are preserved.",
+      "Temporal consistency is maintained across frames."
+    ]
+  },
+  {
+    "id": "bench_006",
+    "sample_id": "051a01c02055a643",
+    "type": [
+      "2-Atomic",
+      "Stylize",
+      "Add"
+    ],
+    "instruction": [
+      "Restyle the main young boy centered in the frame into a manga style.",
+      "Add a large glowing red heart shape at the blurred crowd of people in the background behind the boy."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/bench_006_input.mp4"
+      }
+    ],
+    "checklist": [
+      "The main young boy centered in the frame is restyled into manga.",
+      "a large glowing red heart shape is added as specified.",
+      "Non-target regions and subject identity are preserved.",
+      "Temporal consistency is maintained across frames."
+    ]
+  },
+  {
+    "id": "bench_007",
+    "sample_id": "15eb58b63df3e889",
+    "type": [
+      "3-Atomic",
+      "Replace",
+      "Add",
+      "Remove"
+    ],
+    "instruction": [
+      "Replace the man's red plaid shirt with a solid navy blue t-shirt.",
+      "Add a silver chain necklace around the man's neck.",
+      "Remove the grey printer sitting on the white cabinet to the right."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/bench_007_input.mp4"
+      }
+    ],
+    "checklist": [
+      "the man's red plaid shirt is replaced with a solid navy blue t-shirt.",
+      "a silver chain necklace is added as specified.",
+      "the grey printer on the white cabinet to the right is fully removed with no residual artifacts.",
+      "Non-target regions and subject identity are preserved.",
+      "Temporal consistency is maintained across frames."
+    ]
+  },
+  {
+    "id": "bench_008",
+    "sample_id": "04e2d15076af0f2c",
+    "type": [
+      "3-Atomic",
+      "Stylize",
+      "Add",
+      "Replace"
+    ],
+    "instruction": [
+      "Restyle The solid blue wall/background behind the subject. into flat vector illustration.",
+      "Add a large potted green plant with broad leaves at The man centered in the frame wearing a white shirt.",
+      "Replace The white long-sleeved button-up shirt worn by the man. with a black turtleneck sweater."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/bench_008_input.mp4"
+      }
+    ],
+    "checklist": [
+      "The solid blue wall/background behind the subject is restyled into flat vector illustration.",
+      "a large potted green plant with broad leaves is added as specified.",
+      "The white long-sleeved button-up shirt worn by the man is replaced with a black turtleneck sweater.",
+      "Non-target regions and subject identity are preserved.",
+      "Temporal consistency is maintained across frames."
+    ]
+  },
+  {
+    "id": "bench_009",
+    "sample_id": "10299360dd0fa3a9",
+    "type": [
+      "3-Atomic",
+      "Replace",
+      "Remove"
+    ],
+    "instruction": [
+      "Replace the man with short gray hair in the foreground with a woman with long blonde hair.",
+      "Replace the black sunglasses resting on top of the subject's head with a red baseball cap.",
+      "Remove the distant shoreline and trees visible in the background behind the subject."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/bench_009_input.mp4"
+      }
+    ],
+    "checklist": [
+      "the man with short gray hair in the foreground is replaced with a woman with long blonde hair.",
+      "the black sunglasses resting on top of the subject's head is replaced with a red baseball cap.",
+      "the distant shoreline and trees visible in the background behind the subject is fully removed with no residual artifacts.",
+      "Non-target regions and subject identity are preserved.",
+      "Temporal consistency is maintained across frames."
+    ]
+  },
+  {
+    "id": "bench_010",
+    "sample_id": "1471b6e50cf8fe92",
+    "type": [
+      "3-Atomic",
+      "Replace",
+      "Add"
+    ],
+    "instruction": [
+      "Replace the black rifle held by the man with a long wooden baseball bat.",
+      "Add a red baseball cap to the man's head.",
+      "Replace the damaged white van in the background with a bright yellow sports car."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/bench_010_input.mp4"
+      }
+    ],
+    "checklist": [
+      "the black rifle held by the man is replaced with a long wooden baseball bat.",
+      "a red baseball cap is added as specified.",
+      "the damaged white van in the background is replaced with a bright yellow sports car.",
+      "Non-target regions and subject identity are preserved.",
+      "Temporal consistency is maintained across frames."
+    ]
+  },
+  {
+    "id": "bench_011",
+    "sample_id": "085a50d51db97bd4",
+    "type": [
+      "3-Atomic",
+      "Stylize",
+      "Add",
+      "Remove"
+    ],
+    "instruction": [
+      "Restyle the blurry background area directly behind the man containing shelves or equipment into ghibli style.",
+      "Add a large red flower pot with a green plant at the front portion of a shiny black vintage car located on the right side of the background.",
+      "Remove the black-rimmed eyeglasses worn by the man."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/bench_011_input.mp4"
+      }
+    ],
+    "checklist": [
+      "The blurry background area directly behind the man containing shelves or equipment is restyled into ghibli.",
+      "a large red flower pot with a green plant is added as specified.",
+      "The black-rimmed eyeglasses worn by the man is fully removed with no residual artifacts.",
+      "Non-target regions and subject identity are preserved.",
+      "Temporal consistency is maintained across frames."
+    ]
+  },
+  {
+    "id": "bench_012",
+    "sample_id": "04629ef7f3d27a67",
+    "type": [
+      "3-Atomic",
+      "Stylize",
+      "Replace",
+      "Remove"
+    ],
+    "instruction": [
+      "Restyle the blurred yellow industrial vehicle or machinery in the center background into a claymation style.",
+      "Replace the white blazer/jacket worn by the main subject with a red leather biker jacket.",
+      "Remove the large green vertical metal support beam structure on the left side."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/bench_012_input.mp4"
+      }
+    ],
+    "checklist": [
+      "The blurred yellow industrial vehicle or machinery in the center background is restyled into claymation.",
+      "The white blazer/jacket worn by the main subject is replaced with a red leather biker jacket.",
+      "The large green vertical metal support beam structure on the left side is fully removed with no residual artifacts.",
+      "Non-target regions and subject identity are preserved.",
+      "Temporal consistency is maintained across frames."
+    ]
+  },
+  {
+    "id": "bench_013",
+    "sample_id": "00a61ffa0a42be57",
+    "type": [
+      "4-Atomic",
+      "Add",
+      "Remove",
+      "Replace"
+    ],
+    "instruction": [
+      "Add a large orange tabby cat sitting on the desk to the left of the woman.",
+      "Remove the pink knitted beanie worn by the woman.",
+      "Replace the white piece of paper held by the woman with a black tablet computer.",
+      "Replace the cluttered home office background with glass display cabinets and shelves with a blurred view of a modern city skyline through a window."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/bench_013_input.mp4"
+      }
+    ],
+    "checklist": [
+      "a large orange tabby cat sitting on the desk is added as specified.",
+      "the pink knitted beanie worn by the woman is fully removed with no residual artifacts.",
+      "the white piece of paper held by the woman is replaced with a black tablet computer.",
+      "the cluttered home office background with glass display cabinets and shelves is replaced with a blurred view of a modern city skyline through a window.",
+      "Non-target regions and subject identity are preserved.",
+      "Temporal consistency is maintained across frames."
+    ]
+  },
+  {
+    "id": "bench_014",
+    "sample_id": "03573fbf55edcd41",
+    "type": [
+      "4-Atomic",
+      "Stylize",
+      "Replace",
+      "Remove",
+      "Add"
+    ],
+    "instruction": [
+      "Restyle the green-lit wall in the background into a watercolor painting style.",
+      "Replace the camouflage jacket worn by the man with a bright red leather bomber jacket.",
+      "Remove the long wavy blonde hair of the man.",
+      "Add a small potted succulent plant at the black round pillow on the right side of the couch."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/bench_014_input.mp4"
+      }
+    ],
+    "checklist": [
+      "Green-lit wall in the background is restyled into watercolor painting style.",
+      "Camouflage jacket worn by the man is replaced with a bright red leather bomber jacket.",
+      "Long wavy blonde hair of the man is fully removed with no residual artifacts.",
+      "a small potted succulent plant is added as specified.",
+      "Non-target regions and subject identity are preserved.",
+      "Temporal consistency is maintained across frames."
+    ]
+  },
+  {
+    "id": "bench_015",
+    "sample_id": "1371038798641263",
+    "type": [
+      "4-Atomic",
+      "Stylize",
+      "Add",
+      "Replace"
+    ],
+    "instruction": [
+      "Restyle the white hanging planter with green vines attached to the stone wall on the left into manga style.",
+      "Add a pair of red sunglasses to the man sitting at the table in the center-right foreground.",
+      "Replace the wooden table surface with glasses and bottles in the lower-left foreground with a marble table surface.",
+      "Add a yellow baseball cap to the short dark hair on the man's head."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/bench_015_input.mp4"
+      }
+    ],
+    "checklist": [
+      "White hanging planter with green vines attached to the stone wall on the left is restyled into manga.",
+      "a pair of red sunglasses is added as specified.",
+      "Wooden table surface with glasses and bottles in the lower-left foreground is replaced with a marble table surface.",
+      "a yellow baseball cap is added as specified.",
+      "Non-target regions and subject identity are preserved.",
+      "Temporal consistency is maintained across frames."
+    ]
+  },
+  {
+    "id": "bench_016",
+    "sample_id": "05635c5f0a3f50a8",
+    "type": [
+      "4-Atomic",
+      "Replace",
+      "Add",
+      "Remove"
+    ],
+    "instruction": [
+      "Replace the blue backpack sitting on the ground with a red soccer ball.",
+      "Add a white cat lying down on the concrete ground to the left of the boy.",
+      "Remove the yellow long-sleeved shirt worn by the boy.",
+      "Replace the red brick wall behind the subjects with a plain grey concrete wall."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/bench_016_input.mp4"
+      }
+    ],
+    "checklist": [
+      "the blue backpack sitting on the ground is replaced with a red soccer ball.",
+      "a white cat lying down is added as specified.",
+      "the yellow long-sleeved shirt worn by the boy is fully removed with no residual artifacts.",
+      "the red brick wall behind the subjects is replaced with a plain grey concrete wall.",
+      "Non-target regions and subject identity are preserved.",
+      "Temporal consistency is maintained across frames."
+    ]
+  },
+  {
+    "id": "bench_017",
+    "sample_id": "08271b4e0a46a00e",
+    "type": [
+      "4-Atomic",
+      "Stylize",
+      "Replace",
+      "Remove",
+      "Add"
+    ],
+    "instruction": [
+      "Restyle the plain wall area in the upper right background into van gogh style.",
+      "Replace the grey t-shirt worn by the man with a bright red hoodie.",
+      "Remove the blue speaker located to the far left edge.",
+      "Add a small green potted plant at the location of the man sitting in the center-right foreground."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/bench_017_input.mp4"
+      }
+    ],
+    "checklist": [
+      "Plain wall area in the upper right background is restyled into van gogh.",
+      "Grey t-shirt worn by the man is replaced with a bright red hoodie.",
+      "Blue speaker located to the far left edge is fully removed with no residual artifacts.",
+      "a small green potted plant is added as specified.",
+      "Non-target regions and subject identity are preserved.",
+      "Temporal consistency is maintained across frames."
+    ]
+  },
+  {
+    "id": "bench_018",
+    "sample_id": "19ec13e18425dd5f",
+    "type": [
+      "5-Atomic",
+      "Add",
+      "Remove",
+      "Replace"
+    ],
+    "instruction": [
+      "Add a large white cooler box inside the open bed of the blue pickup truck.",
+      "Remove the silver roll bar attached to the back of the truck.",
+      "Replace the blue paint color of the main body of the pickup truck with matte black paint.",
+      "Replace the brick paved driveway and parking area with gravel ground.",
+      "Add a silver roof rack on top of the blue pickup truck."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/bench_018_input.mp4"
+      }
+    ],
+    "checklist": [
+      "a large white cooler box is added as specified.",
+      "the silver roll bar attached to the back of the truck is fully removed with no residual artifacts.",
+      "the blue paint color of the main body of the pickup truck is replaced with matte black paint.",
+      "the brick paved driveway and parking area is replaced with gravel ground.",
+      "a silver roof rack is added as specified.",
+      "Non-target regions and subject identity are preserved.",
+      "Temporal consistency is maintained across frames."
+    ]
+  },
+  {
+    "id": "bench_019",
+    "sample_id": "20f30588fc25cdba",
+    "type": [
+      "5-Atomic",
+      "Stylize",
+      "Add",
+      "Remove",
+      "Replace"
+    ],
+    "instruction": [
+      "Restyle the man's face and head centered in the frame into a claymation style.",
+      "Add a small ceramic cat figurine at the framed artwork or picture on the shelf/wall to the right of the man.",
+      "Remove the movie poster hanging on the wall to the left of the man.",
+      "Replace the large green potted plant leaves visible on the right side background with a tall vase with dried orange flowers.",
+      "Add a hanging fern plant at the bright vertical window area visible in the upper center background."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/bench_019_input.mp4"
+      }
+    ],
+    "checklist": [
+      "The man's face and head centered in the frame is restyled into claymation.",
+      "a small ceramic cat figurine is added as specified.",
+      "Movie poster hanging on the wall to the left of the man is fully removed with no residual artifacts.",
+      "Large green potted plant leaves visible on the right side background is replaced with a tall vase with dried orange flowers.",
+      "a hanging fern plant is added as specified.",
+      "Non-target regions and subject identity are preserved.",
+      "Temporal consistency is maintained across frames."
+    ]
+  },
+  {
+    "id": "bench_020",
+    "sample_id": "07c08e9ee9851111",
+    "type": [
+      "5-Atomic",
+      "Replace",
+      "Add",
+      "Remove"
+    ],
+    "instruction": [
+      "Replace the camouflage bomber jacket worn by the woman with a bright red puffer coat.",
+      "Add a large green leafy potted plant in a terracotta pot to the white wall area to the left of the woman's shoulder.",
+      "Replace the painting of the blue dragon on the wall with a framed map of the world.",
+      "Remove the gold necklace worn around the woman's neck.",
+      "Replace the pink and colorful hammocks hanging inside the wire cage with a wooden ladder structure."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/bench_020_input.mp4"
+      }
+    ],
+    "checklist": [
+      "the camouflage bomber jacket worn by the woman is replaced with a bright red puffer coat with a black zipper.",
+      "a large green leafy potted plant in a terracotta pot is added as specified.",
+      "the painting of the blue dragon on the wall is replaced with a framed map of the world.",
+      "the gold necklace worn around the woman's neck is fully removed with no residual artifacts.",
+      "the pink and colorful hammocks hanging inside the wire cage is replaced with a wooden ladder structure.",
+      "Non-target regions and subject identity are preserved.",
+      "Temporal consistency is maintained across frames."
+    ]
+  }
+]
