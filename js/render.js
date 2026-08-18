@@ -231,6 +231,113 @@ function buildSlider(media) {
   if (after.label)
     slider.appendChild(h("div", { class: "slider-label after" }, after.label));
 
+  // zoom button -> opens modal with the same slider
+  const zoomBtn = h("button", {
+    class: "slider-zoom-btn",
+    title: "放大查看",
+    onclick: (e) => {
+      e.stopPropagation();
+      openSliderModal(media);
+    },
+  }, "⤢");
+  slider.appendChild(zoomBtn);
+
+  return slider;
+}
+
+/* ─── Modal: enlarged slider view ─── */
+// Track videos that were playing before opening the modal, so we can resume them on close.
+let _pausedByModal = [];
+
+function openSliderModal(media) {
+  // Pause all inline videos to save resources; remember which were playing.
+  _pausedByModal = [];
+  document.querySelectorAll("video").forEach((v) => {
+    if (!v.paused) {
+      _pausedByModal.push(v);
+      v.pause();
+    }
+  });
+
+  const overlay = h("div", { class: "video-modal", onclick: closeModal });
+  const closeBtn = h("button", {
+    class: "modal-close-btn",
+    title: "关闭",
+    onclick: closeModal,
+  }, "✕");
+  const modalContent = h("div", {
+    class: "modal-slider-wrap",
+    onclick: (e) => e.stopPropagation(),
+  });
+
+  // Reuse buildSlider to create the same interactive slider
+  const sliderEl = buildSliderRaw(media);
+  modalContent.appendChild(sliderEl);
+
+  overlay.appendChild(modalContent);
+  overlay.appendChild(closeBtn);
+  document.body.appendChild(overlay);
+  document.body.style.overflow = "hidden";
+
+  // Wire up slider interactions for the modal
+  initVideoSliders(overlay);
+
+  // ESC to close
+  const onKey = (e) => {
+    if (e.key === "Escape") {
+      closeModal();
+      document.removeEventListener("keydown", onKey);
+    }
+  };
+  document.addEventListener("keydown", onKey);
+}
+
+function closeModal() {
+  const overlay = document.querySelector(".video-modal");
+  if (!overlay) return;
+  // Pause modal videos before removing
+  overlay.querySelectorAll("video").forEach((v) => v.pause());
+  overlay.remove();
+  document.body.style.overflow = "";
+  // Resume videos that were playing before the modal opened.
+  _pausedByModal.forEach((v) => {
+    if (v.isConnected) v.play().catch(() => {});
+  });
+  _pausedByModal = [];
+}
+
+// buildSlider without the zoom button (avoids infinite recursion in modal)
+function buildSliderRaw(media) {
+  const videos = media.filter((m) => m.video);
+  let before = videos[0];
+  let after = videos[1];
+  const hl = videos.find((m) => m.highlight);
+  if (hl) {
+    before = hl;
+    after = videos.find((m) => m !== hl) || videos[0];
+  }
+
+  const vid = (m, cls) =>
+    h("video", {
+      class: cls,
+      src: resolveUrl(m.video),
+      autoplay: cls === "video-before",
+      loop: false,
+      muted: true,
+      playsInline: true,
+    });
+
+  const slider = h("div", { class: "video-slider" }, [
+    vid(before, "video-before"),
+    vid(after, "video-after"),
+    h("div", { class: "slider-handle" }),
+  ]);
+
+  if (before.label)
+    slider.appendChild(h("div", { class: "slider-label before" }, before.label));
+  if (after.label)
+    slider.appendChild(h("div", { class: "slider-label after" }, after.label));
+
   return slider;
 }
 
