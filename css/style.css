@@ -99,12 +99,18 @@ a:hover { color: var(--accent-hover); text-decoration: underline; text-underline
 .authors sup { position: relative; top: -0.25em; font-size: 0.68em; font-weight: 700; }
 .affiliations {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4px 18px;
+  align-items: center;
+  gap: 4px;
   color: var(--fg-soft);
   font-size: 0.95rem;
   margin-bottom: 28px;
+}
+.affil-org {
+  color: #111827;
+  font-weight: 500;
 }
 
 /* ---------------- Link bar / buttons ---------------- */
