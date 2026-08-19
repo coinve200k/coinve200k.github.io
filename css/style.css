@@ -571,7 +571,7 @@ table.metrics tbody tr:last-child td { border-bottom: 0; }
 table.metrics td.method-name { text-align: left; font-weight: 400; }
 table.metrics tr.is-ours { background: var(--accent-soft); }
 table.metrics tr.is-ours td { color: var(--accent-hover); }
-table.metrics td.best { font-weight: 900; }
+table.metrics td.best { font-weight: 990; }
 table.metrics tr.is-baseline td { border-bottom: 2px solid var(--fg); }
 table.metrics th.group-start,
 table.metrics td.group-start { border-left: 2px solid var(--border-card); }
