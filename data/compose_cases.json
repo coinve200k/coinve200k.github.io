@@ -1,36 +1,38 @@
 [
   {
-    "id": "compose_84",
+    "id": "compose_173",
     "type": [
-      "2-Atomic",
+      "3-Atomic",
       "Stylize",
-      "Replace"
+      "Replace",
+      "Remove"
     ],
     "instruction": [
-      "Restyle The green SUV parked to the left and behind the man into watercolor painting.",
-      "Replace The blue denim shirt with white geometric patterns worn by the man with a bright red plaid flannel shirt."
+      "Restyle The woman (Brandi) standing in the center of the frame into cel-shaded anime.",
+      "Replace The yellow beehive-shaped ceramic jar on the counter to the right with a large red teapot.",
+      "Remove The chalkboard sign reading 'WELCOME TO BRANDI'S KITCHEN' on the upper left wall."
     ],
     "media": [
       {
         "label": "Input",
-        "video": "assets/videos/composite/84_src.mp4"
+        "video": "assets/videos/composite/173_src.mp4"
       },
       {
         "label": "CoinVE-Edit (Ours)",
-        "video": "assets/videos/composite/84_step6000_tgt.mp4",
+        "video": "assets/videos/composite/173_step6000_tgt.mp4",
         "highlight": true
       },
       {
         "label": "Seedance 2.0",
-        "video": "assets/videos/composite/84_seedance_2_tgt.mp4"
+        "video": "assets/videos/composite/173_seedance_2_tgt.mp4"
       },
       {
         "label": "Kling O3",
-        "video": "assets/videos/composite/84_kling_o3_tgt.mp4"
+        "video": "assets/videos/composite/173_kling_o3_tgt.mp4"
       },
       {
         "label": "SAMA",
-        "video": "assets/videos/composite/84_sama_tgt.mp4"
+        "video": "assets/videos/composite/173_sama_tgt.mp4"
       }
     ]
   },
@@ -70,39 +72,37 @@
     ]
   },
   {
-    "id": "compose_173",
+    "id": "compose_84",
     "type": [
-      "3-Atomic",
+      "2-Atomic",
       "Stylize",
-      "Replace",
-      "Remove"
+      "Replace"
     ],
     "instruction": [
-      "Restyle The woman (Brandi) standing in the center of the frame into cel-shaded anime.",
-      "Replace The yellow beehive-shaped ceramic jar on the counter to the right with a large red teapot.",
-      "Remove The chalkboard sign reading 'WELCOME TO BRANDI'S KITCHEN' on the upper left wall."
+      "Restyle The green SUV parked to the left and behind the man into watercolor painting.",
+      "Replace The blue denim shirt with white geometric patterns worn by the man with a bright red plaid flannel shirt."
     ],
     "media": [
       {
         "label": "Input",
-        "video": "assets/videos/composite/173_src.mp4"
+        "video": "assets/videos/composite/84_src.mp4"
       },
       {
         "label": "CoinVE-Edit (Ours)",
-        "video": "assets/videos/composite/173_step6000_tgt.mp4",
+        "video": "assets/videos/composite/84_step6000_tgt.mp4",
         "highlight": true
       },
       {
         "label": "Seedance 2.0",
-        "video": "assets/videos/composite/173_seedance_2_tgt.mp4"
+        "video": "assets/videos/composite/84_seedance_2_tgt.mp4"
       },
       {
         "label": "Kling O3",
-        "video": "assets/videos/composite/173_kling_o3_tgt.mp4"
+        "video": "assets/videos/composite/84_kling_o3_tgt.mp4"
       },
       {
         "label": "SAMA",
-        "video": "assets/videos/composite/173_sama_tgt.mp4"
+        "video": "assets/videos/composite/84_sama_tgt.mp4"
       }
     ]
   },
@@ -257,6 +257,46 @@
     ]
   },
   {
+    "id": "compose_332",
+    "type": [
+      "5-Atomic",
+      "Stylize",
+      "Remove",
+      "Replace",
+      "Add"
+    ],
+    "instruction": [
+      "Restyle The white wall behind the main subject into watercolor painting.",
+      "Remove The windows with blinds visible in the far right background.",
+      "Replace The blue dress worn by the main woman with a red floral patterned blouse.",
+      "Add a pair of large round sunglasses at The glasses worn by the main woman.",
+      "Remove The doorway or opening on the left side background."
+    ],
+    "media": [
+      {
+        "label": "Input",
+        "video": "assets/videos/composite/332_src.mp4"
+      },
+      {
+        "label": "CoinVE-Edit (Ours)",
+        "video": "assets/videos/composite/332_step6000_tgt.mp4",
+        "highlight": true
+      },
+      {
+        "label": "Seedance 2.0",
+        "video": "assets/videos/composite/332_seedance_2_tgt.mp4"
+      },
+      {
+        "label": "Kling O3",
+        "video": "assets/videos/composite/332_kling_o3_tgt.mp4"
+      },
+      {
+        "label": "SAMA",
+        "video": "assets/videos/composite/332_sama_tgt.mp4"
+      }
+    ]
+  },
+  {
     "id": "compose_311",
     "type": [
       "4-Atomic",
@@ -330,46 +370,6 @@
       {
         "label": "SAMA",
         "video": "assets/videos/composite/355_sama_tgt.mp4"
-      }
-    ]
-  },
-  {
-    "id": "compose_332",
-    "type": [
-      "5-Atomic",
-      "Stylize",
-      "Remove",
-      "Replace",
-      "Add"
-    ],
-    "instruction": [
-      "Restyle The white wall behind the main subject into watercolor painting.",
-      "Remove The windows with blinds visible in the far right background.",
-      "Replace The blue dress worn by the main woman with a red floral patterned blouse.",
-      "Add a pair of large round sunglasses at The glasses worn by the main woman.",
-      "Remove The doorway or opening on the left side background."
-    ],
-    "media": [
-      {
-        "label": "Input",
-        "video": "assets/videos/composite/332_src.mp4"
-      },
-      {
-        "label": "CoinVE-Edit (Ours)",
-        "video": "assets/videos/composite/332_step6000_tgt.mp4",
-        "highlight": true
-      },
-      {
-        "label": "Seedance 2.0",
-        "video": "assets/videos/composite/332_seedance_2_tgt.mp4"
-      },
-      {
-        "label": "Kling O3",
-        "video": "assets/videos/composite/332_kling_o3_tgt.mp4"
-      },
-      {
-        "label": "SAMA",
-        "video": "assets/videos/composite/332_sama_tgt.mp4"
       }
     ]
   }
