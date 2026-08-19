@@ -330,16 +330,15 @@
     "id": "train_014",
     "type": [
       "4-Atomic",
-      "Replace",
       "Add",
-      "Remove",
-      "Replace"
+      "Replace",
+      "Remove"
     ],
     "instruction": [
-      "Replace the brown leather headrest behind the driver's seat with a black leather headrest.",
-      "Add a woman wearing a red jacket sitting in the passenger seat next to the driver.",
-      "Remove the sunglasses worn by the man driving.",
-      "Replace the green trees visible through the car window with a snowy mountain landscape."
+      "Add a woman with long dark hair wearing a blue dress standing next to the man on his right side.",
+      "Replace the man's red and white plaid shirt with a solid navy blue button-down shirt.",
+      "Remove the white rice cooker from the kitchen counter.",
+      "Replace the wooden kitchen cabinets in the background with white subway tiles."
     ],
     "layout": "slider",
     "media": [
